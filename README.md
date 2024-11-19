@@ -18,6 +18,9 @@ Figure 01  Block Diagram of Encoder 8 * 3
 
 **Truth Table**
 
+
+
+
 ![image](https://github.com/naavaneetha/ENCODER8TO3DATAFLOW/assets/154305477/35496b14-ae6e-4cd1-9abd-d6736b576575)
 
 The logical expression of the term A0, A1, and A2 are as follows:
@@ -39,17 +42,33 @@ Figure 02  Encoder 8 * 3
 /* write all the steps invloved */
 
 **PROGRAM**
+module exp6 (din,a,b,c);
+input [0:7] din;
+output a,b,c;
+assign a=(din[4]|din[5]|din[6]|din[7]);
+assign b=(din[2]|din[3]|din[7]);
+assign c=(din[1]|din[5]|din[7]);
+endmodule
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by: RegisterNumber:24900901
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![exp6](https://github.com/user-attachments/assets/fce5e8c6-755c-4b90-ad62-fbe6a4267452)
+
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot 2024-11-19 113729](https://github.com/user-attachments/assets/cb274636-fecf-4837-87be-35e3d4f28c3c)
+
+
+
 **RESULTS**
+Thus the implement encoder 8 to 3 in dataflow modelling verilog and validating their functionalling using the functional tales..
 
 
 
